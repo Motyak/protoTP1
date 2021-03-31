@@ -25,7 +25,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp1.FXMLDocumentController">
+<VBox prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp1.MainFrameController">
    <children>
       <MenuBar prefHeight="25.0" prefWidth="385.0">
         <menus>
@@ -50,8 +50,8 @@
       </MenuBar>
       <ToolBar>
         <items>
-          <Button mnemonicParsing="false" text="New Contact" />
-            <Button mnemonicParsing="false" text="Edit Contact" />
+          <Button mnemonicParsing="false" onAction="#addContact_OnClick" text="New Contact" />
+            <Button mnemonicParsing="false" onAction="#addContact_OnClick" text="Edit Contact" />
             <Button mnemonicParsing="false" text="Remove Contact" />
             <HBox />
             <Pane HBox.hgrow="ALWAYS" />
@@ -249,6 +249,6 @@
             </AnchorPane>
         </items>
       </SplitPane>
-      <TextField text="Selected contact : Toto Toto" />
+      <TextField editable="false" text="Selected contact : Toto Toto" />
    </children>
 </VBox>

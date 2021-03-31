@@ -17,7 +17,7 @@ import javafx.scene.control.TableView;
  *
  * @author Tom
  */
-public class FXMLDocumentController implements Initializable {
+public class MainFrameController implements Initializable {
     
     @FXML
     private ListView addressBooks;
@@ -31,6 +31,10 @@ public class FXMLDocumentController implements Initializable {
         addrBooksItems.add("Private contacts");
         addrBooksItems.add("Professional contacts");
         addrBooksItems.add("Student contacts");
-    }    
+    }
+    
+    public void addContact_OnClick() {
+        ContactManagerFX.editContactDialog.show();
+    }
     
 }
